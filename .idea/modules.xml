@@ -1,14 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ProjectModuleManager">
-<<<<<<< HEAD
     <modules />
-=======
-    <modules>
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/pokewars-2016.iml" filepath="$PROJECT_DIR$/pokewars-2016.iml" />
-    </modules>
->>>>>>> b3b42adcf8b592fbc1898ccc74b729c633cf296d
   </component>
 </project>
-
