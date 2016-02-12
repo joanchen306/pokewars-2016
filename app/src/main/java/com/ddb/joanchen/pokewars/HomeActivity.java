@@ -1,15 +1,24 @@
 package com.ddb.joanchen.pokewars;
 
+import models.NetClientGet;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import org.json.JSONException;
 
 
 public class HomeActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        NetClientGet ncg = new NetClientGet();
+        try {
+            System.out.print(ncg.get());
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
     }
