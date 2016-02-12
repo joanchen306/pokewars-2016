@@ -13,12 +13,12 @@ public class HomeActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        NetClientGet ncg = new NetClientGet();
+        /*NetClientGet ncg = new NetClientGet();
         try {
-            System.out.print(ncg.get());
+            //System.out.print(ncg.get());
         } catch (JSONException e) {
             e.printStackTrace();
-        }
+        }*/
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
     }

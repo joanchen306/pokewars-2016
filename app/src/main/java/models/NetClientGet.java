@@ -1,5 +1,7 @@
 package models;
 
+import android.util.Log;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -17,7 +19,7 @@ import org.json.JSONObject;
 public class NetClientGet {
 
     // http://localhost:3000
-    public JSONObject get() throws JSONException {
+    public static void main(String args[]) throws JSONException {
 
         try {
 
@@ -41,10 +43,11 @@ public class NetClientGet {
                 output += line;
             }
 
-            JSONObject data = new JSONObject(output);
+            //JSONObject data = new JSONObject(output);
+            System.out.print(output);
 
             conn.disconnect();
-            return data;
+            //return data;
 
         } catch (MalformedURLException e) {
 
@@ -55,6 +58,6 @@ public class NetClientGet {
             e.printStackTrace();
         }
 
-        return new JSONObject();
+        //return new JSONObject();
     }
 }
