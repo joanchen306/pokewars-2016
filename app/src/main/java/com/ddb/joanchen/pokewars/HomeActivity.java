@@ -11,14 +11,11 @@ import org.json.JSONException;
 
 public class HomeActivity extends Activity {
 
+    private NetClientGet ncg;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        /*NetClientGet ncg = new NetClientGet();
-        try {
-            //System.out.print(ncg.get());
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }*/
+        ncg = new NetClientGet();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
     }

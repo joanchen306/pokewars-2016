@@ -19,7 +19,7 @@ import org.json.JSONObject;
 public class NetClientGet {
 
     // http://localhost:3000
-    public static void main(String args[]) throws JSONException {
+    public void getId() throws JSONException {
 
         try {
 
