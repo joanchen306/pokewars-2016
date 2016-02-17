@@ -11,9 +11,19 @@
         android:layout_height="wrap_content"
         android:text="POKE"
         android:id="@+id/PokeButton"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
         android:nestedScrollingEnabled="false"
-        android:onClick="onClickHomeScreen" />
+        android:onClick="onClickHomeScreen"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="111dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageViewPoke"
+        android:src="@mipmap/pointerright"
+        android:layout_marginBottom="119dp"
+        android:layout_above="@+id/PokeButton"
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>

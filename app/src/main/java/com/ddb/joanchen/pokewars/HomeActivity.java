@@ -8,7 +8,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
-
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.ImageView;
 
 public class HomeActivity extends Activity {
     public int pokeNum;
@@ -45,15 +47,15 @@ public class HomeActivity extends Activity {
     }
 
     public void onClickHomeScreen(View view) {
+        ImageView image = (ImageView)findViewById(R.id.imageViewPoke);
+        Animation animation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.pokeanimation);
+        image.startAnimation(animation);
+
         switch(view.getId()){
             case R.id.PokeButton:
                 pokeNum += 1;
-                if(pokeNum >= 10 && pokeNum < 20) {
+                if(pokeNum >= 10) {
                     Toast.makeText(this,("OMG "+(pokeNum + "") + " Pokes!! You win!!"), Toast.LENGTH_LONG).show();
-                } else if(pokeNum >= 20 && pokeNum < 25) {
-                    Toast.makeText(this,"Okay seriously stop. You've poked me enough.", Toast.LENGTH_LONG).show();
-                } else if(pokeNum >= 25) {
-                    Toast.makeText(this, "I'm done with your shit!", Toast.LENGTH_LONG).show();
                 } else {
                     Toast.makeText(this, (pokeNum + ""), Toast.LENGTH_LONG).show();
                 }

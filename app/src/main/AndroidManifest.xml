@@ -16,33 +16,36 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".HomeActivity"
             android:label="Home"
             android:parentActivityName=".LoginActivity">
-        <intent-filter>>
-            <action android:name="android.HomeActivity"/>
-            <category android:name="android.intent.category.DEFAULT"/>
-        </intent-filter>
-        <meta-data
-            android:name="android.support.PARENT_ACTIVITY"
-            android:value=".LoginActivity"/>
-        </activity>
+            <intent-filter>
+                >
+                <action android:name="android.HomeActivity" />
 
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".LoginActivity" />
+        </activity>
         <activity
             android:name=".RegisterActivity"
             android:label="Registration"
             android:parentActivityName=".LoginActivity">
-            <intent-filter>>
-                <action android:name="android.RegisterActivity"/>
-                <category android:name="android.intent.category.DEFAULT"/>
+            <intent-filter>
+                >
+                <action android:name="android.RegisterActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
+
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".LoginActivity"/>
+                android:value=".LoginActivity" />
         </activity>
-
     </application>
 
 </manifest>
